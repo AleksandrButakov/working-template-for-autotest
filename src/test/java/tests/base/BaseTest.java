@@ -10,6 +10,7 @@ import pages.base.BasePage;
 import pages.car_loans.CarLoansPage;
 
 import static common.Config.CLEAR_COOKIES;
+import static common.Config.HOLD_BROWSER_OPEN;
 
 /*
 Эта аннотация говорит что все аннотации в BaseTest они будут выполняться после прогона каждого класса. Единственным
@@ -50,7 +51,10 @@ public class BaseTest {
     // данный метод будет заниматься закрытием браузера. Для данного метода создадим в классе Config
     // переменную HOLD_BROWSER_OPEN
     void close() {
-
+        if (!HOLD_BROWSER_OPEN) {
+            // если не true, то закрываем наш браузер
+            driver.close();
+        }
     }
 
 }
