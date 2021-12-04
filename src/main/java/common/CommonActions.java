@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import static constants.Constant.TimeoutVariables.IMPLICIT_WAIT;
 
-public class CommonAction {
+public class CommonActions {
 
     public static WebDriver createDriver() {
         WebDriver driver = new ChromeDriver();
