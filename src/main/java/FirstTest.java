@@ -22,13 +22,15 @@ public class FirstTest {
     public void testSearchGoogle() {
 
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();
         System.out.println("Start test...");
         driver.get("http://google.com");
 
+        // явное ожидание. Создаем новый экземпляр объекта куда передаем драйвер и время ожидания
         WebDriverWait wait = new WebDriverWait(driver, 3);
-        //WebElement someElement =
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("q")));
+        // Создание переменной типа WebElement
+        WebElement someElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("q")));
 
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("ChromeDriver");
