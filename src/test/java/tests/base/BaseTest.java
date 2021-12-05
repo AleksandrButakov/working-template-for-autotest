@@ -17,6 +17,10 @@ import static common.Config.HOLD_BROWSER_OPEN;
 минусом такой архитектуры теста будет являться то, что после выполнения определенного тестового класса
 car_loans например, у нас будет отрываться браузер и потом браузер будет закрываться.
  */
+/*
+В BaseTest у нас прописан жизненный цикл всех тестов для каждого тестового класса. Это означает что @AfterEach and
+@AfterAll будут выполняться для каждого класса по классово
+ */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 // здесь будет происходить инициализация драйвера
@@ -43,7 +47,7 @@ public class BaseTest {
             driver.manage().deleteAllCookies();
             // указываем какой скрипт необходимо выполнить. Необходимо почистить все сессионные данные, которые
             // которые находятся в определенном окне
-            javascriptExecutor.executeScript("windows.sessionStorage.clear()");
+            javascriptExecutor.executeScript("window.sessionStorage.clear()");
         }
     }
 

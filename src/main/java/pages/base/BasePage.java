@@ -10,7 +10,9 @@ import static constants.Constant.TimeoutVariables.EXPLICIT_WAIT;
 // в BasePage будут находиться методы по назначению одинаковые для всех страниц
 public class BasePage {
 
-    WebDriver driver;
+    // Драйвер в BasePage прокидывается из BaseTest
+    public WebDriver driver;
+
     // создадим конструктор
     public BasePage(WebDriver driver) {
         this.driver = driver;
