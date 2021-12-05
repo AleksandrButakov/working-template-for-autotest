@@ -4,6 +4,8 @@ import common.CommonActions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
@@ -12,6 +14,12 @@ import pages.telecommunications.MobilePhoneReplenishmentPage;
 
 import static common.Config.CLEAR_COOKIES;
 import static common.Config.HOLD_BROWSER_OPEN;
+
+/*
+аннотацией @Execution указали чтоб все тесты которые наследуются от BaseTest запускались многопоточно. Если
+многопоточность не нужна можно просто закомментировать @Execution
+ */
+// @Execution(ExecutionMode.CONCURRENT)
 
 /*
 Эта аннотация говорит что все аннотации в BaseTest они будут выполняться после прогона каждого класса. Единственным
