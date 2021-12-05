@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "uid" : "d36ee707edb8f5ca",
+  "name" : "checkIsRedirectToAuth()",
+  "time" : {
+    "start" : 1638728225030,
+    "stop" : 1638728232346,
+    "duration" : 7316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d91efad13797a48",
+  "name" : "selectAgreementsTabInPublicSession()",
+  "time" : {
+    "start" : 1638728225197,
+    "stop" : 1638728232711,
+    "duration" : 7514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

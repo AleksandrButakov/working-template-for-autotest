@@ -19,7 +19,7 @@ import static common.Config.HOLD_BROWSER_OPEN;
 аннотацией @Execution указали чтоб все тесты которые наследуются от BaseTest запускались многопоточно. Если
 многопоточность не нужна можно просто закомментировать @Execution
  */
-// @Execution(ExecutionMode.CONCURRENT)
+@Execution(ExecutionMode.CONCURRENT)
 
 /*
 Эта аннотация говорит что все аннотации в BaseTest они будут выполняться после прогона каждого класса. Единственным

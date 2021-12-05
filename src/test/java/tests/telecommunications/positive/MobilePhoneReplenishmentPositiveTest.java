@@ -13,7 +13,7 @@ public class MobilePhoneReplenishmentPositiveTest extends BaseTest {
         basePage.goToUrl(MOBILE_PAYMENT_URL);
         mobilePhoneReplenishmentPage.selectCardFromWallet();
         basePage.isAuthWidgetPresented();
-
+        //assert(false);
     }
 
 

@@ -1,1 +1,83 @@
-{ }
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  },
+  "time" : {
+    "minDuration" : 7316,
+    "maxDuration" : 7514,
+    "sumDuration" : 14830,
+    "start" : 1638728225030,
+    "stop" : 1638728232711,
+    "duration" : 7681
+  },
+  "children" : [ {
+    "uid" : "811e3431c24e584",
+    "name" : "Default feature",
+    "time" : {
+      "minDuration" : 7316,
+      "maxDuration" : 7514,
+      "sumDuration" : 14830,
+      "start" : 1638728225030,
+      "stop" : 1638728232711,
+      "duration" : 7681
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "ffd8c465d9ef1315",
+      "name" : "Default story",
+      "time" : {
+        "minDuration" : 7316,
+        "maxDuration" : 7514,
+        "sumDuration" : 14830,
+        "start" : 1638728225030,
+        "stop" : 1638728232711,
+        "duration" : 7681
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "d36ee707edb8f5ca",
+        "name" : "checkIsRedirectToAuth()",
+        "time" : {
+          "start" : 1638728225030,
+          "stop" : 1638728232346,
+          "duration" : 7316
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "7d91efad13797a48",
+        "name" : "selectAgreementsTabInPublicSession()",
+        "time" : {
+          "start" : 1638728225197,
+          "stop" : 1638728232711,
+          "duration" : 7514
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

@@ -1,3 +1,104 @@
 {
-  "children" : [ ]
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  },
+  "time" : {
+    "minDuration" : 7316,
+    "maxDuration" : 7514,
+    "sumDuration" : 14830,
+    "start" : 1638728225030,
+    "stop" : 1638728232711,
+    "duration" : 7681
+  },
+  "children" : [ {
+    "uid" : "7562397e9d8f0a25",
+    "name" : "tests",
+    "time" : {
+      "minDuration" : 7316,
+      "maxDuration" : 7514,
+      "sumDuration" : 14830,
+      "start" : 1638728225030,
+      "stop" : 1638728232711,
+      "duration" : 7681
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "c848ccfa047d5510",
+      "name" : "telecommunications.positive.MobilePhoneReplenishmentPositiveTest",
+      "time" : {
+        "minDuration" : 7316,
+        "maxDuration" : 7316,
+        "sumDuration" : 7316,
+        "start" : 1638728225030,
+        "stop" : 1638728232346,
+        "duration" : 7316
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "d36ee707edb8f5ca",
+        "name" : "checkIsRedirectToAuth",
+        "time" : {
+          "start" : 1638728225030,
+          "stop" : 1638728232346,
+          "duration" : 7316
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "e65c78f7e5df8aaa",
+      "name" : "loans.positive.CarLoansPositiveTest",
+      "time" : {
+        "minDuration" : 7514,
+        "maxDuration" : 7514,
+        "sumDuration" : 7514,
+        "start" : 1638728225197,
+        "stop" : 1638728232711,
+        "duration" : 7514
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "7d91efad13797a48",
+        "name" : "selectAgreementsTabInPublicSession",
+        "time" : {
+          "start" : 1638728225197,
+          "stop" : 1638728232711,
+          "duration" : 7514
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
 }
