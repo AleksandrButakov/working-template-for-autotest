@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 import pages.loans.CarLoansPage;
+import pages.telecommunications.MobilePhoneReplenishmentPage;
 
 import static common.Config.CLEAR_COOKIES;
 import static common.Config.HOLD_BROWSER_OPEN;
@@ -34,9 +35,12 @@ public class BaseTest {
     // в BaseTest мы создадим драйвер через CommonActions.createDriver(), проинициализируем его и прокинем в
     // конструктор страницы BasePage. Аналогичным образом будем прокидывать его в конструкторы всех остальных страниц
     protected WebDriver driver = CommonActions.createDriver();
+
     // внутрь данного объекта страницы мы будем прокидывать драйвер
     protected BasePage basePage = new BasePage(driver);
+
     protected CarLoansPage carLoansPage = new CarLoansPage(driver);
+    protected MobilePhoneReplenishmentPage mobilePhoneReplenishmentPage = new MobilePhoneReplenishmentPage(driver);
 
     @AfterEach
     // после каждого теста будем чистить cookies, чтоб каждый тест начинался как с нуля

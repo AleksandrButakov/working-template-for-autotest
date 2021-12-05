@@ -11,11 +11,11 @@ public class MobilePhoneReplenishmentTest extends BaseTest {
     @Test
     public void checkIsRedirectToAuth() {
         basePage.goToUrl(MOBILE_PAYMENT_URL);
-
-        // MobilePhoneReplenishmentPage.selectCardFromWallet();
-
-
+        mobilePhoneReplenishmentPage.selectCardFromWallet();
+        basePage.isAuthWidgetPresented();
 
     }
+
+
 
 }
