@@ -7,7 +7,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
-import pages.car_loans.CarLoansPage;
+import pages.loans.CarLoansPage;
 
 import static common.Config.CLEAR_COOKIES;
 import static common.Config.HOLD_BROWSER_OPEN;
