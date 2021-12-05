@@ -38,7 +38,6 @@ public class BaseTest {
 
     // внутрь данного объекта страницы мы будем прокидывать драйвер
     protected BasePage basePage = new BasePage(driver);
-
     protected CarLoansPage carLoansPage = new CarLoansPage(driver);
     protected MobilePhoneReplenishmentPage mobilePhoneReplenishmentPage = new MobilePhoneReplenishmentPage(driver);
 

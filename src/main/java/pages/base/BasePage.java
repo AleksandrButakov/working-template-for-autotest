@@ -32,6 +32,7 @@ public class BasePage {
         return element;
     }
 
+    // проверим виден ли фрейм аутентификации
     public void isAuthWidgetPresented() {
          WebElement authFrame = driver.findElement(authWidget);
          waitElementIsVisible(authFrame);
