@@ -8,23 +8,23 @@
     "total" : 2
   },
   "time" : {
-    "minDuration" : 7316,
-    "maxDuration" : 7514,
-    "sumDuration" : 14830,
-    "start" : 1638728225030,
-    "stop" : 1638728232711,
-    "duration" : 7681
+    "minDuration" : 8005,
+    "maxDuration" : 8309,
+    "sumDuration" : 16314,
+    "start" : 1638728638880,
+    "stop" : 1638728647189,
+    "duration" : 8309
   },
   "children" : [ {
-    "uid" : "d2ed08e72f1fefcb",
+    "uid" : "7801d6c1d1d9a888",
     "name" : "tests.telecommunications.positive.MobilePhoneReplenishmentPositiveTest",
     "time" : {
-      "minDuration" : 7316,
-      "maxDuration" : 7316,
-      "sumDuration" : 7316,
-      "start" : 1638728225030,
-      "stop" : 1638728232346,
-      "duration" : 7316
+      "minDuration" : 8005,
+      "maxDuration" : 8005,
+      "sumDuration" : 8005,
+      "start" : 1638728638880,
+      "stop" : 1638728646885,
+      "duration" : 8005
     },
     "statistic" : {
       "failed" : 0,
@@ -36,27 +36,27 @@
     },
     "type" : "TestGroupNode",
     "children" : [ {
-      "uid" : "d36ee707edb8f5ca",
+      "uid" : "62a925a6baecea3f",
       "name" : "checkIsRedirectToAuth()",
       "time" : {
-        "start" : 1638728225030,
-        "stop" : 1638728232346,
-        "duration" : 7316
+        "start" : 1638728638880,
+        "stop" : 1638728646885,
+        "duration" : 8005
       },
       "status" : "passed",
       "flaky" : false,
       "type" : "TestCaseNode"
     } ]
   }, {
-    "uid" : "953cf6e438cc1652",
+    "uid" : "6c1bea1adc0f2dfe",
     "name" : "tests.loans.positive.CarLoansPositiveTest",
     "time" : {
-      "minDuration" : 7514,
-      "maxDuration" : 7514,
-      "sumDuration" : 7514,
-      "start" : 1638728225197,
-      "stop" : 1638728232711,
-      "duration" : 7514
+      "minDuration" : 8309,
+      "maxDuration" : 8309,
+      "sumDuration" : 8309,
+      "start" : 1638728638880,
+      "stop" : 1638728647189,
+      "duration" : 8309
     },
     "statistic" : {
       "failed" : 0,
@@ -68,12 +68,12 @@
     },
     "type" : "TestGroupNode",
     "children" : [ {
-      "uid" : "7d91efad13797a48",
+      "uid" : "173e932138cbdcff",
       "name" : "selectAgreementsTabInPublicSession()",
       "time" : {
-        "start" : 1638728225197,
-        "stop" : 1638728232711,
-        "duration" : 7514
+        "start" : 1638728638880,
+        "stop" : 1638728647189,
+        "duration" : 8309
       },
       "status" : "passed",
       "flaky" : false,
